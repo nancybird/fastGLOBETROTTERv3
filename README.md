@@ -13,7 +13,13 @@ Author: Garrett Hellenthal
 
 2) Fixed version. Can set prop.ind: [0,1,0F,1F,0S,1S]. [0,1] used in previous fastGLOBETROTTER, but 1F and 1S activates new 'fixed' feature.
 
-These versions allow the user to 'fix' admixture sources. Create a fixed file in the format e.g. 
+These versions allow the user to 'fix' admixture sources. 
+
+Mode 1F: User can fix the mixture coefficients within the source (so only admixture date and 'prop' from each source is estimated).
+
+Mode 1S: Mixture coefficients are alse esitmated within the sources, starting from those specified in the input file. 
+
+User must create a fixed file in the format e.g. 
 
 prop France Norway
 
