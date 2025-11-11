@@ -17,7 +17,7 @@ These versions allow the user to 'fix' admixture sources.
 
 Mode 1F: User can fix the mixture coefficients within the source (so only admixture date and 'prop' from each source is estimated).
 
-Mode 1S: Mixture coefficients are also esitmated within the sources, starting from those specified in the input file. 
+Mode 1S: Mixture coefficients are also estimated within the sources, starting from those specified in the input file. 
 
 User must create a fixed file in the format e.g. 
 
@@ -29,4 +29,4 @@ prop Malawi Senegal
 
 0.75 0.5 0.5
 
-named the same as 'save.file.main:' in your paramfile, with postfix 'main.txt'. This will fix one source as France and Norway, and one as Malawi and Senegal, preventing the same population being used in both sources. 
+named the same as 'save.file.main:' in your paramfile, with postfix '.txt'. This will fix one source as France and Norway, and one as Malawi and Senegal, preventing the same population being used in both sources. 
