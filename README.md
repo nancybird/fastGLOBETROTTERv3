@@ -30,3 +30,5 @@ prop Malawi Senegal
 0.75 0.5 0.5
 
 named the same as 'save.file.main:' in your paramfile, with postfix '.txt'. This will fix one source as France and Norway, and one as Malawi and Senegal, preventing the same population being used in both sources. 
+
+# Included script to calculate bootstrap SE using formulat from Busing et al (1999)
