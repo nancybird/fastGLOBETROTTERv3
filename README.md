@@ -31,4 +31,7 @@ prop Malawi Senegal
 
 named the same as 'save.file.main:' in your paramfile, with postfix '.txt'. This will fix one source as France and Norway, and one as Malawi and Senegal, preventing the same population being used in both sources. 
 
-# Included script to calculate bootstrap SE using formulat from Busing et al (1999)
+
+** Also included script to calculate jackknife standard error using formula from Busing et al (1999)**
+
+This formula is useful when using jackknifes to estimate date error (bootstrap.date.ind: 2 ) e.g. when running fastGLOBETROTTER on a single sample. 
