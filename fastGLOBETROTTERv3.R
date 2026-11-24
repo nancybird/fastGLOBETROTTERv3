@@ -2411,17 +2411,18 @@ if ( admix.curves.ind == 2 )
 	   temp.ind.vec = 1:(num.samplefiles)
 	   temp.ind.vec = temp.ind.vec[-which(temp.ind.vec == b)]
 	   jackknife.ind.vec=matrix(rep(1:ninds-1,each=num.samplefiles-1),byrow=FALSE,nrow=num.samplefiles-1)
-	 
-       jackknife_sample = tempfile(
+
+		jackknife_sample = tempfile(
     pattern = paste0(
         "jackknife_sample_",
-        gsub("[^A-Za-z0-9_.-]", "_", recipient_name),
+        gsub("[^A-Za-z0-9_.-]", "_", recipient.pops),
         "_", b, "_",
         format(Sys.time(), "%Y%m%d_%H%M%S"), "_"
     ),
     tmpdir = ".",
     fileext = ".txt"
 )
+
       	file_sample = jackknife_sample
        file_sample = sink(file_sample)
 	   for (j in 1:length(temp.ind.vec))
@@ -2430,10 +2431,10 @@ if ( admix.curves.ind == 2 )
 		cat('\n')
      	}
     	sink()
-          jackknife_rec = tempfile(
+         jackknife_rec = tempfile(
     pattern = paste0(
         "jackknife_rec_",
-        gsub("[^A-Za-z0-9_.-]", "_", recipient_name),
+        gsub("[^A-Za-z0-9_.-]", "_", recipient.pops),
         "_", b, "_",
         format(Sys.time(), "%Y%m%d_%H%M%S"), "_"
     ),
