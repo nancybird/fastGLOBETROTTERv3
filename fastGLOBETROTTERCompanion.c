@@ -517,7 +517,7 @@ void data_read(int *ploidy, int * ind_id_vec, char **filenameSAMPread, char **fi
                           if (donor_label_vec[(hap_vecGRID[i]-1)]==-9)
                         {
 
-                          //printf("Individual has been painted by missing donor %i, Exiting....\n",hap_vecGRID[i]-1);
+                          printf("Individual has been painted by missing donor %i, Exiting....\n",hap_vecGRID[i]+1);
                           exit(1);
                         }
                       chunk_donor_popALL[chunk_count_all]=donor_label_vec[(hap_vecGRID[i]-1)];
