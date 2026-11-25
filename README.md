@@ -21,7 +21,8 @@ Mode 1S: Mixture coefficients are also estimated within the sources, starting fr
 
 User must create a fixed file in the format e.g. 
 
-```prop France Norway
+```
+prop France Norway
 
 0.25 0.5 0.5
 
