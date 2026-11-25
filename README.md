@@ -1,9 +1,9 @@
 # fastGLOBETROTTERv3
 fastGLOBETROTTER (Wangkumhang et al., 2022) with new features
 
-R CMD SHLIB -o fastGLOBETROTTERCompanion.so fastGLOBETROTTERCompanion.c -lz -O2
+```R CMD SHLIB -o fastGLOBETROTTERCompanion.so fastGLOBETROTTERCompanion.c -lz -O2```
 
-R < fastGLOBETROTTERv3.R parameter.infile.list samplefiles.infile.list recomratefiles.infile.list option --no-save > output.out
+```R < fastGLOBETROTTERv3.R parameter.infile.list samplefiles.infile.list recomratefiles.infile.list option --no-save > output.out```
 
 Author: Garrett Hellenthal
 
@@ -21,13 +21,13 @@ Mode 1S: Mixture coefficients are also estimated within the sources, starting fr
 
 User must create a fixed file in the format e.g. 
 
-prop France Norway
+```prop France Norway
 
 0.25 0.5 0.5
 
 prop Malawi Senegal
 
-0.75 0.5 0.5
+0.75 0.5 0.5```
 
 named the same as 'save.file.main:' in your paramfile, with postfix '.txt'. This will fix one source as France and Norway, and one as Malawi and Senegal, preventing the same population being used in both sources. 
 
